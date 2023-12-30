@@ -21,6 +21,15 @@ class SplashPage extends ConsumerWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                AnimatedOpacity(
+                  duration: const Duration(seconds: 2),
+                  opacity: 1.0,
+                  child: Image.asset(
+                    'assets/images/splashImage.jpg',
+                    width: 200,
+                    height: 200,
+                  ),
+                ),
                 Text(Strings.welCome,style: const TextStyle(fontSize: 20,fontWeight: FontWeight.bold)),
                 SizedBox(height: size.height*0.05),
                 const CircularProgressIndicator()
